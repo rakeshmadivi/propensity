@@ -1,0 +1,5 @@
+/export compute-0-9(rw,async,no_root_squash)
+/export compute-0-11(rw,async,no_root_squash)
+/export compute-0-12(rw,async,no_root_squash)
+/export compute-0-18(rw,async,no_root_squash)
+/export compute-0-19(rw,async,no_root_squash)

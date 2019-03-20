@@ -1,0 +1,8 @@
+$pbsserver shakuntala.local
+$restricted *.local
+$restricted *.cluster
+$usecp shakuntala.cluster:/home /home
+
+$logevent 225
+$loglevel 7
+
