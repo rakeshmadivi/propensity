@@ -1,0 +1,13 @@
+Log of ls 
+Mon Mar 18 17:27:40 2019
+
+docker-curriculum
+kibana.yml
+lslog.txt
+mydockercompose
+simple_app
+simpleapp2
+simple_app.sh
+
+Mon Mar 18 17:27:40 2019
+----------------

@@ -1,0 +1,4 @@
+server.name: "kibana"
+server.port: 5602
+server.host: "localhost"
+elasticsearch.uri: 

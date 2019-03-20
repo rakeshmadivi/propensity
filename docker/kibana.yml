@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build: ./content
+    ports:
+     - "5000:5000"
+    volumes:
+     - ./content/code:/code
+  redis:
+    image: "redis:alpine"
+
