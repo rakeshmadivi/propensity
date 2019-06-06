@@ -1,0 +1,8 @@
++ LXC Setup in Debian Stretch
+https://feeding.cloud.geek.nz/posts/lxc-setup-on-debian-stretch/
+
++ How to create a Linux Container (LXD) with RDMA accelerated applications over 100Gb Infiniband Network
+https://community.mellanox.com/s/article/how-to-create-a-linux-container--lxd--with-rdma-accelerated-applications-over-100gb-infiniband-network
+
++ Linux Interfaces in Virtual Network
+https://developers.redhat.com/blog/2018/10/22/introduction-to-linux-interfaces-for-virtual-networking/

@@ -1,0 +1,21 @@
+#%Module1.0####################################################################
+##
+##  mymodule modulefile
+##
+##  My new module that sets my personal environment
+##
+proc ModulesHelp { } {
+        puts stderr "\tAdds my personal stuff to the environment."
+}
+
+## Create a whatis file.  Not nessecary but cool.
+module-whatis   "Adds my own personal links, aliases and paths"
+
+## Set a few personal aliases
+set-alias       "ll"    "ls -al"
+
+## Add my bin directory to the path
+append-path     PATH    ~/bin
+
+## Set an environment variable
+setenv          MY_VAR  "hello"

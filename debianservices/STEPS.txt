@@ -1,0 +1,32 @@
+Unit Files Use .INI format using Section Headers in square brackets[] and Variable Declaration under the sections
+
+Usual Unit File Location: 
+/etc/systemd/system/
+/lib/systemd/system/
+
+Things to identify before creating a service:
+	Name of the service should not match any existing service names
+	Type,
+	whether systemd to restart our service on exit,
+	Environment Setup
+	Service Dependencies like what services to be started before our service
+
+Service Types:
+	simple - Program runs in foreground
+	forking - Use this if we can't prevent daemon from forking
+	oneshot
+	dbus
+	notify or 
+	idle
+
+Environment setup
+
+STEPS:
+1. Create/Modify Unit file
+2. Making systemd to look for new things: 
+	systemctl daemon-reload
+3. If we want the service to start everytime system is booted:
+	systemctl enable myservice.service
+OR
+   Start as and when we want it to be
+	systemctl start myservice.service

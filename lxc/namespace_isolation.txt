@@ -1,0 +1,33 @@
+Namespaces Isolation in action can be done using 'unshare' command
+References
+1. https://linuxcontainers.org/
+2. https://medium.com/@teddyking/linux-namespaces-850489d3ccf
+
+
+UTS Namespace: provides Hostname and Domainname Identifiers for the system
+
+Isolate UTS Namespace using:
+
+# Become root
+sudo su
+
+# Current Hostname
+hostname	-> Let this be "Actual"
+
+# Create Shell in New UTS Namespace
+unshare -u /bin/bash
+
+# Now you are provided with new shell; Try to change the hostname and check if is changed
+hostname mynewhostname && hostname	-> Should result in "mynewhostname"
+
+# Exit from the new UTS namespace and Test the hostname
+exit && hostname	-> Should result in "Actual"
+
+All the Namespaces Available:
+	Mount - isolate filesystem mount points
+	UTS - isolate hostname and domainname
+	IPC - isolate interprocess communication (IPC) resources
+	PID - isolate the PID number space
+	Network - isolate network interfaces
+	User - isolate UID/GID number spaces
+	Cgroup - isolate cgroup root directory 
