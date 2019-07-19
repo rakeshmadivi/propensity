@@ -1,10 +1,22 @@
 package main
+/*
 import "fmt"
-
 import "time"
+*/
+import("fmt";"time")
+/*
+also can be imported in following ways:
+1. import "fmt";import "os"
+2. import (
+	"fmt"
+	"time"
+)
+3. import ( "fmt";"os"
+*/
 
 const SIZE=99
 
+// Different ways of Variable declarations
 func declaringvars(){
 	// Declaring int variable
 	var x int
@@ -21,6 +33,7 @@ func declaringvars(){
 	fmt.Println("x = ",x," y = ",y," z = ",z," yz = ",yz," a = ",a," b = ",b)
 }
 
+// Testing Loops in go
 func loops(){
 
 
@@ -75,6 +88,7 @@ func loops(){
 	}
 }
 
+// Go Routine
 func mygoroutine(channel chan<- string){
 	fmt.Println("My-goroutine.")
 
@@ -84,6 +98,11 @@ func mygoroutine(channel chan<- string){
 	//channel <- arr
 }
 
+func multi_return()(int,int,int){
+	return 1,2,3
+}
+
+// Testing functions and go concurrency
 func testfunctions(){
 	// Test Go Channels
 	channel_var := make(chan string)
@@ -100,7 +119,53 @@ func testfunctions(){
 	chan_data:=<-channel_var
 
 	fmt.Println("Got from Channel: ",chan_data)
+
+	// Multiple return values from function
+	a,b,c := multi_return()
+	fmt.Println("Multi-Return-Values:",a,b,c)
 }
+
+// Test for-range construct
+func forrange(){
+	var nums=[]int{1,2,3,4,56}
+	for i,val:=range nums{
+		fmt.Println(i,val)
+	}
+}
+
+// Returning multiple values
+func multi_return_vals(x int,y int)(int,int){
+	return x,y
+}
+
+// Variadic function: that takes variable number of arguments
+func variadic(x ...int){
+	fmt.Println(x," ")
+	for k,v:=range x{
+		fmt.Println(k,v)
+	}
+}
+
+// Pointers and structures
+func ptr_and_structs(){
+	// variable and pointer variable
+	var a int
+	var b *int
+
+	// structure
+	type student struct{
+		id int
+		name string
+	}
+	a=70;
+	fmt.Println("a = ",a);
+	b=&a;
+	*b=77
+	fmt.Println("a = ",a);
+	x:=student{1,"Rakesh"}
+	fmt.Println("Structure: ",x)
+}
+
 /**************** MAIN FUNCTION ********************/
 func main(){
 	fmt.Println("My constant: ",SIZE)
@@ -109,6 +174,19 @@ func main(){
 
 	// Testing functions and go routines
 	testfunctions()
-	
 
+	// For-range Test
+	//forrange()
+
+	// Multi-value return
+	//fmt.Println(multi_return_vals(2,4))
+
+	// Variable no.of arguments to the function
+	/*
+	variadic(1,2)
+	variadic(1,2,3,4,5,6)
+	*/
+
+	// Pointers and Structures
+	//ptr_and_structs()
 }

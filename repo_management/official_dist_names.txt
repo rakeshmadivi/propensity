@@ -1,0 +1,26 @@
+Origin: Rakesh Repo
+Label: deb.rakeshrepo.com
+Suite: oldstable
+Codename: jessie
+Architectures: amd64
+Components: main
+Description: Unofficial Debian/Ubuntu Packages maintained by Rakesh Madivi
+SignWith: 4B8786A6
+
+Origin: Rakesh Repo
+Label: deb.rakeshrepo.com
+Suite: stable
+Codename: stretch
+Architectures: amd64
+Components: main
+Description: Unofficial Debian/Ubuntu Packages maintained by Rakesh Madivi
+SignWith: 4B8786A6
+
+Origin: Rakesh Repo
+Label: deb.rakeshrepo.com
+Suite: unstable
+Codename: sid
+Architectures: amd64
+Components: main
+Description: Unofficial Debian/Ubuntu Packages maintained by Rakesh Madivi
+SignWith: 4B8786A6

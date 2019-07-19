@@ -1,0 +1,13 @@
+DEBIAN PACKAGE MANAGEMENT INTERNALS( Ref: https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_debian_package_management_internals )
+1. Archive Meta Data
+2. Release File
+
+###################### Commands ###############
+sudo mkdir /srv/deb
+sudo mkdir /var/www/www.rakeshrepo.com
+sudo echo "/srv/deb /var/www/www.rakeshrepo.com none defaults,bind 0 0" >> /etc/fstab
+
+# Install reprepro
+sudo apt-get install reprepro
+
+

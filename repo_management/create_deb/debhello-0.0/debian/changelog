@@ -1,0 +1,6 @@
+debhello (0.0-1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- test <test@localhost>  Tue, 16 Apr 2019 16:15:34 +0530
