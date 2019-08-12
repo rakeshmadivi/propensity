@@ -1,0 +1,1 @@
+cmd_/home/rakesh/propensity/device-driver/ebbchar/ebbchar.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T /usr/src/linux-headers-4.9.0-8-common/scripts/module-common.lds --build-id  -o /home/rakesh/propensity/device-driver/ebbchar/ebbchar.ko /home/rakesh/propensity/device-driver/ebbchar/ebbchar.o /home/rakesh/propensity/device-driver/ebbchar/ebbchar.mod.o ;  true
